@@ -14,11 +14,11 @@
 ## API
 
 ```js
-var function = require('jstransformer')(require('jstransformer-function'))
+var func = require('jstransformer')(require('jstransformer-function'));
 
 var input = 'return "Hello, " + this.name + "!"';
 var locals = { name: 'World' };
-function.render(input, locals).body;
+func.render(input, locals).body;
 //=> 'Hello, World'
 ```
 
