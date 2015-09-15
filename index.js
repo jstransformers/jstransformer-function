@@ -18,3 +18,9 @@ exports.compile = function (str, options) {
     return func.apply(that)
   }
 }
+
+exports.compileClient = function (str, options) {
+  return 'function (locals) {' +
+    'return function () {' + str + '}.call(locals)' +
+  '}'
+}
