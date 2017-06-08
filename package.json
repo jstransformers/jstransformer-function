@@ -9,9 +9,9 @@
     "index.js"
   ],
   "devDependencies": {
-    "test-jstransformer": "^1.0.0",
     "xor-crypt": "^1.0.0",
-    "xo": "^0.17.1"
+    "test-jstransformer": "^1.0.0",
+    "xo": "*"
   },
   "scripts": {
     "coverage": "test-jstransformer coverage",
