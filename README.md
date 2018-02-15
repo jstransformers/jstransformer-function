@@ -15,7 +15,7 @@
 ## API
 
 ```js
-var func = require('jstransformer')(require('jstransformer-function'));
+var func = require('jstransformer')(require('jstransformer-function'))
 
 var input = 'return "Hello, " + this.name + "!"';
 var locals = { name: 'World' };
