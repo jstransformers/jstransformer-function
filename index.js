@@ -1,6 +1,6 @@
 'use strict'
 
-var extend = require('extend-shallow')
+const extend = require('extend-shallow')
 
 exports.name = 'function'
 exports.outputFormat = 'html'
@@ -8,15 +8,15 @@ exports.outputFormat = 'html'
 exports.compile = function (str) {
   // Create the function in compile() so that it can be cached.
   // eslint-disable-next-line no-new-func
-  var func = new Function('require', str)
+  const func = new Function('require', str)
 
   // Construct a new function, manipulating "this" for local variable support.
-  return function (locals, options) {
+  return (locals, options) => {
     // Construct the "this" object for the function.
-    var that = extend({}, options, locals)
+    const that = extend({}, options, locals)
 
     // Build the global function arguments.
-    var args = [
+    const args = [
       // Provide the "require" statement so that modules can be loaded.
       require
     ]
