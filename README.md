@@ -1,7 +1,5 @@
 # jstransformer-function
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/jstransformers/jstransformer-function.svg)](https://greenkeeper.io/)
-
 [Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function) support for [JSTransformers](http://github.com/jstransformers).
 
 [![Build Status](https://img.shields.io/travis/jstransformers/jstransformer-function/master.svg)](https://travis-ci.org/jstransformers/jstransformer-function)
