@@ -3,7 +3,7 @@
     "extend-shallow": "^3.0.2"
   },
   "name": "jstransformer-function",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Function support for JSTransformers.",
   "keywords": [
     "jstransformer"
